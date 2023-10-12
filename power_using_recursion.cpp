@@ -28,3 +28,20 @@ double Recurse(double n,int p=2)
     {return (n*Recurse(n,p-1));}
 
 }
+int main()
+
+{
+double n;
+int p;
+
+    cout<<"Enter the base value (power is default set to 2) :";
+    cin>>n;
+    cout<<"\nPower of number is : "<<Power(n);
+    cout<<"\nEnter the base value and power :";
+    cin>>n>>p;
+    cout<<"\nPower of number is : "<<Power(n,p);
+    cout<<"\nEnter the base value and power :";
+    cin>>n>>p;
+    cout<<"\nUsing Recursion, Power of number is : "<<Recurse(n,p);
+return 0;
+}
